@@ -1,0 +1,21 @@
+[project]
+name = "cf-ai-gateway-study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "서재원", email = "cinos81@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "openai>=3.42.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+cf-ai-gateway-study = "cf_ai_gateway_study:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
